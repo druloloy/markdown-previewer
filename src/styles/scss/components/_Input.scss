@@ -1,0 +1,21 @@
+.input {
+  height: 100%;
+  width: 50%;
+
+  textarea {
+    background-color: $primary-color;
+    width: 100%;
+    height: inherit;
+    outline: none;
+    padding: 1rem;
+    color: $accent-color;
+
+    &::-webkit-scrollbar {
+      width: 5px;
+      background-color: $primary-color;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: $accent-color;
+    }
+  }
+}
