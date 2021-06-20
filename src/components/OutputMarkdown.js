@@ -12,6 +12,7 @@ function OutputMarkdown({ preview }) {
         <div className="output">
             <div
             className="previewer"
+            id="preview"
             dangerouslySetInnerHTML={setHTMLPreview()}
             ></div>
         </div>

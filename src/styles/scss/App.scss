@@ -2,7 +2,9 @@
 
 $primary-color: #2b2b2b;
 $accent-color: #769aa5;
+$secondary-color: #50fa7b;
 
+@import "./components/Menu";
 @import "./components/Output";
 @import "./components/Input";
 
@@ -36,6 +38,11 @@ body {
     .input {
       width: 100%;
       height: 50vh;
+
+      #addFile {
+        top: 70px;
+        right: 5%;
+      }
       textarea {
         height: 100%;
       }

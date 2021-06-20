@@ -1,5 +1,5 @@
 import React from 'react'
-import marked from 'marked';
+import { FaGithub } from 'react-icons/fa';
 
 function Header({ input, setPreview }) {
 
@@ -8,9 +8,10 @@ function Header({ input, setPreview }) {
             <h1 className="navbar-brand ms-3 ">DruPiler</h1>
             <a 
             target="_blank"
+            rel="noreferrer"
             href="https://github.com/druloloy/markdown-previewer"
             className="link-light me-3"
-            ><i class="fab fa-github fs-2"></i></a>
+            ><FaGithub className="fs-2"/></a>
         </div>
     )
 }

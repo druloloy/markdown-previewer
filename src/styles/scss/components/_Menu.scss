@@ -1,0 +1,41 @@
+@mixin fontSize($fs) {
+  font-size: $fs;
+}
+.butt {
+  transition: 300ms ease-in-out;
+  &.butt-clear {
+    background: none;
+    transition: inherit;
+
+    &:active {
+      transition: inherit;
+      opacity: 0.8;
+    }
+    &:hover {
+      transition: 300ms ease-in-out;
+      color: $secondary-color;
+      cursor: pointer;
+    }
+  }
+}
+.light {
+  color: $accent-color;
+}
+.dark {
+  color: $primary-color;
+}
+.fs-1 {
+  @include fontSize(12px);
+}
+.fs-2 {
+  @include fontSize(16px);
+}
+.fs-3 {
+  @include fontSize(18px);
+}
+.fs-4 {
+  @include fontSize(20px);
+}
+.fs-5 {
+  @include fontSize(24px);
+}
